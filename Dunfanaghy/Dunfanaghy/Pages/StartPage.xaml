@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Dunfanaghy.Pages.StartPage"
+             Title="Dunfanaghy"
+             Icon="icon.png">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <Style x:Key="Box1" TargetType="Label">
+        <Setter Property="BackgroundColor" Value="Red"/>
+        <Setter Property="TextColor" Value="#fff"/>
+      </Style>
+      <Style x:Key="Box2" TargetType="Label">
+        <Setter Property="BackgroundColor" Value="Blue"/>
+        <Setter Property="TextColor" Value="#fff"/>
+      </Style>
+      <Style x:Key="NoPadding" TargetType="Image">
+        <Setter Property="Margin" Value="0"/>
+      </Style>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  <ScrollView>
+    <StackLayout Padding="0" Spacing="0">
+      <Image Source="accommodation1.jpg" Style="{StaticResource NoPadding}">
+        <Image.GestureRecognizers>
+          <TapGestureRecognizer Tapped="TapGestureRecognizer_OnTapped" CommandParameter="Accommodation" NumberOfTapsRequired="1"></TapGestureRecognizer>
+        </Image.GestureRecognizers>
+      </Image>
+      <Image Source="bars1.jpg" Style="{StaticResource NoPadding}">
+        <Image.GestureRecognizers>
+          <TapGestureRecognizer Tapped="TapGestureRecognizer_OnTapped" CommandParameter="Bars" NumberOfTapsRequired="1"></TapGestureRecognizer>
+        </Image.GestureRecognizers>
+      </Image>
+      <Image Source="eatingout1.jpg" Style="{StaticResource NoPadding}">
+        <Image.GestureRecognizers>
+          <TapGestureRecognizer Tapped="TapGestureRecognizer_OnTapped" CommandParameter="EatingOut" NumberOfTapsRequired="1"></TapGestureRecognizer>
+        </Image.GestureRecognizers>
+      </Image>
+      <Image Source="shops1.jpg" Style="{StaticResource NoPadding}">
+        <Image.GestureRecognizers>
+          <TapGestureRecognizer Tapped="TapGestureRecognizer_OnTapped" CommandParameter="Shops" NumberOfTapsRequired="1"></TapGestureRecognizer>
+        </Image.GestureRecognizers>
+      </Image>
+      <Image Source="beaches1.jpg" Style="{StaticResource NoPadding}">
+        <Image.GestureRecognizers>
+          <TapGestureRecognizer Tapped="TapGestureRecognizer_OnTapped" CommandParameter="Beaches" NumberOfTapsRequired="1"></TapGestureRecognizer>
+        </Image.GestureRecognizers>
+      </Image>
+      <Image Source="area1.jpg" Style="{StaticResource NoPadding}">
+        <Image.GestureRecognizers>
+          <TapGestureRecognizer Tapped="TapGestureRecognizer_OnTapped" CommandParameter="Area" NumberOfTapsRequired="1"></TapGestureRecognizer>
+        </Image.GestureRecognizers>
+      </Image>
+      <Image Source="leisure1.jpg" Style="{StaticResource NoPadding}">
+        <Image.GestureRecognizers>
+          <TapGestureRecognizer Tapped="TapGestureRecognizer_OnTapped" CommandParameter="Leisure" NumberOfTapsRequired="1"></TapGestureRecognizer>
+        </Image.GestureRecognizers>
+      </Image>
+      <Image Source="walks1.jpg" Style="{StaticResource NoPadding}">
+        <Image.GestureRecognizers>
+          <TapGestureRecognizer Tapped="TapGestureRecognizer_OnTapped" CommandParameter="Walks" NumberOfTapsRequired="1"></TapGestureRecognizer>
+        </Image.GestureRecognizers>
+      </Image>
+      <!-- <Button x:Name="ListButton" Text="Accomodation"></Button>-->
+    </StackLayout>
+  </ScrollView>
+</ContentPage>
