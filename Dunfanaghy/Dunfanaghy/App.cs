@@ -26,7 +26,7 @@ namespace Dunfanaghy
                     }
                 }
             };*/
-
+            //git test
             MainPage = new NavigationPage(new StartPage());
         }
 
